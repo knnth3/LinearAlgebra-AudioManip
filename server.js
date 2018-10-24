@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
+const path = require('path');
 
 app.get('/', (req, res) => {
-    res.send('Hello World');
+    res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
 // PORT
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening on port ${port}`));
-
-// app.use(express.static('public'));
+app.use(express.static('public'));
 
