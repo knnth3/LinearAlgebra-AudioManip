@@ -116,7 +116,7 @@ var waveformText;
 
 function setup() {
   // UI
-  createCanvas(window.innerWidth, window.innerWidth);
+  createCanvas(1080, 1200);
   MainColor = {r: 255, g: 255, b:255, a:255};
   ContentBarColor = {r: 255, g: 245, b:255, a:255};
 
@@ -172,10 +172,6 @@ function setup() {
     }
 
   });
-}
-
-function windowResized() {
-  resizeCanvas(window.innerWidth, window.innerWidth);
 }
 
 function draw() {
