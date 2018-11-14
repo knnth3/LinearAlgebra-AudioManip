@@ -17,6 +17,7 @@
   "author": "Eric Marquez",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "nodemon": "^1.18.6"
   }
 }
